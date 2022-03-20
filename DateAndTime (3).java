@@ -46,7 +46,7 @@ public class DateAndTime {
         return endTime.getTime();
     }
 
-    public long dateCalculator(long timeToBirthday) {
+    public void dateCalculator(long timeToBirthday) {
         Calendar calendar = Calendar.getInstance();
         int dayOfEachMonth = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
         long milliSeconds[] = {0,86400000L, 3600000L, 60000, 1000};
@@ -75,6 +75,5 @@ public class DateAndTime {
             }
         }
         System.out.println("To your birthday remains:\n " + typesOfTime[0] + " - month(s); \n " + typesOfTime[1] + " - day(s);\n " + typesOfTime[2] + " - hour(s);\n " + typesOfTime[3] + " - minute(s);\n " + typesOfTime[4] + " - second(s);");
-        return 0;
     }
 }
